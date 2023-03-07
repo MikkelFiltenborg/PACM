@@ -13,14 +13,15 @@
         {
             get
             {
-                return LastName + "," + FirstName;
+                return LastName + ", " + FirstName;
             }
         }
 
         // Private backing field for the public property, LastName.
         // Use this when you want to validate or authenticate.
         private string _lastName;
-        public string LastName {
+        public string LastName 
+        {
             get
             {
                 return _lastName;
